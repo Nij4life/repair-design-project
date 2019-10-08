@@ -1,0 +1,22 @@
+.wrapper {
+  position: relative;
+  max-width: 1440px;
+  margin: auto;
+  background: #131313;
+
+  &--header {
+    max-width: 1276px;
+    margin: auto;
+  }
+
+  &--h1 {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    visibility: hidden;
+  }
+
+  @media screen and (max-width: 800px) {
+    min-width: 300px;
+  }
+}

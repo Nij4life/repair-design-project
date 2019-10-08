@@ -1,0 +1,19 @@
+.header {
+  display: flex;  
+  justify-content: space-between;
+  align-items: center;
+  min-height: 83px;
+
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+
+  
+
+  &--logo {
+    font-weight: 700;
+    color: #E3B873;
+    text-decoration: none;
+  }
+}
