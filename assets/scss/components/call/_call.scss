@@ -7,9 +7,12 @@
   }
 
   &--button {
-    margin-right: 18px;
     padding: 13px 33px;
     font-size: 13px;
     line-height: 15px;
+  }
+
+  header &--button {
+    margin-right: 18px;
   }
 }
