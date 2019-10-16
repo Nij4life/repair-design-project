@@ -4,27 +4,27 @@
   margin: auto;
   background: #131313;
 
-  &--header {
-    max-width: 1276px;
-    margin: auto;
-  }
+    &--header {
+      max-width: 1276px;
+      margin: auto;
+    }
 
-  &--h1 {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    visibility: hidden;
-  }
+      &--h1 {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        visibility: hidden;
+      }
 
-  &--footer {
-    max-width: 1256px;
-    min-height: 133px;
-    margin: auto;
-  }
+    &--footer {
+      max-width: 1256px;
+      min-height: 133px;
+      margin: auto;
+    }
 
-  & main {
-    background: #999;
-  }
+    & main {
+      background: #999999;
+    }
 
   @media screen and (max-width: 800px) {
     min-width: 300px;

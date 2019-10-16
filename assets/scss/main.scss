@@ -1,6 +1,8 @@
 @import 'vendors/normalize';
+@import 'abstracts/variables';
 @import 'layout/wrapper';
 @import 'components/header/header';
 @import 'components/menu/menu';
 @import 'components/button/button';
-@import 'components/call/call'
+@import 'components/call/call';
+@import 'components/banner/banner';

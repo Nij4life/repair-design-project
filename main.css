@@ -359,7 +359,7 @@ template {
   margin: auto;
 }
 .wrapper main {
-  background: #999;
+  background: #999999;
 }
 @media screen and (max-width: 800px) {
   .wrapper {
@@ -379,7 +379,7 @@ template {
 }
 .header--logo {
   font-weight: 700;
-  color: #E3B873;
+  color: #e3b873;
   text-decoration: none;
 }
 
@@ -408,7 +408,7 @@ template {
   font-family: "FuturaDemiC", Arial, sans-serif;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: colorWhite;
   background: #e3b873;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border: 0;
@@ -419,7 +419,7 @@ template {
   margin-right: 45px;
   text-align: right;
   text-decoration-line: underline;
-  color: #E3B873;
+  color: #e3b873;
 }
 .call--button {
   padding: 13px 33px;
@@ -428,6 +428,94 @@ template {
 }
 header .call--button {
   margin-right: 18px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: url("/assets/images/slider1.jpg") no-repeat;
+  background-size: cover;
+}
+.banner .instagram {
+  min-width: 82px;
+  background: #131313;
+}
+.banner .instagram--inner {
+  position: relative;
+  top: 40%;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+.banner .instagram--inner::after {
+  position: relative;
+  bottom: 10px;
+  left: 110px;
+  display: block;
+  width: 51px;
+  height: 1px;
+  content: "";
+  background: #e3b873;
+}
+.banner .instagram--link {
+  text-decoration: none;
+  color: #e3b873;
+}
+.banner .info {
+  justify-self: stretch;
+  margin: 205px 0 205px 60px;
+  color: #ffffff;
+}
+.banner .info--header {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+.banner .info--header .info--city {
+  color: #e3b873;
+}
+.banner .info--text {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 30px;
+}
+.banner .info--button {
+  font-size: 13px;
+  line-height: 15px;
+}
+.banner .info--button:first-of-type {
+  padding: 20px 41px;
+}
+.banner .info--button:last-of-type {
+  padding: 20px 22px;
+  margin-left: 20px;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
+}
+.banner .button--scroll_down {
+  position: absolute;
+  bottom: -50px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  background: #131313;
+  box-shadow: none;
+  text-align: center;
+}
+.banner .button--scroll_down .button--text {
+  margin: 40px 50px;
+  color: #ffffff;
+}
+.banner .button--scroll_down .button--text .button--arrow {
+  margin-left: 15px;
+  padding: 5px 8px;
+  color: #e3b873;
+  border: 1px solid #e3b873;
+  border-radius: 50%;
 }
 
 /*# sourceMappingURL=main.css.map */

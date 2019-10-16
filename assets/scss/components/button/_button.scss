@@ -1,10 +1,10 @@
 .button {
-  font-family: 'FuturaDemiC', Arial, sans-serif;
+  font-family: 'FuturaDemiC', $supportFont;
   text-align: center;
   text-transform: uppercase;
-  color: #ffffff;
+  color: colorWhite;
 
-  background: #e3b873;
+  background: $colorGold;
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border: 0;
   border-radius: 2px;
