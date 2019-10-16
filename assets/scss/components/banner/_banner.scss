@@ -10,7 +10,7 @@
     min-width: 82px;
     background: #131313;
 
-    &--inner{
+    &__inner{
       position: relative;
       top: 40%;
       transform: rotate(90deg);
@@ -28,7 +28,7 @@
       }
     }
     
-    &--link {
+    &__link {
       text-decoration: none;
       color: $colorGold;
     }
@@ -40,7 +40,7 @@
     color: $colorWhite;
 
 
-    &--header {
+    &__header {
       font-family: "Yeseva One", $supportFont;
       font-style: normal;
       font-weight: normal;
@@ -48,19 +48,19 @@
       line-height: 53px;
       text-transform: uppercase;
 
-      & .info--city {
+      & .info__city {
         color: $colorGold;
       }
     }
 
     // Поменять названия запасных шрифтов на переменные!
-    &--text {
+    &__text {
       font-family: "FuturaBookC", $supportFont;
       font-size: 1.1em;
       line-height: 30px;
     }
 
-    &--button {
+    &__button {
       font-size: 13px;
       line-height: 15px;
 
@@ -78,7 +78,7 @@
     }
   }
 
-  & .button--scroll_down {
+  & .button__scroll-down {
     position: absolute;
     bottom: -50px;
     font-family: "Yeseva One", $supportFont;
@@ -88,11 +88,11 @@
     box-shadow: none;
     text-align: center;
  
-    & .button--text {
+    & .button__text {
       margin: 40px 50px;
       color: $colorWhite;
 
-      & .button--arrow {
+      & .button__arrow {
         margin-left: 15px;
         padding: 5px 8px;
         color: $colorGold;

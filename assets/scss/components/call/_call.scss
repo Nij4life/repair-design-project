@@ -1,18 +1,18 @@
 .call {
-  &--link {
+  &__link {
     margin-right: 45px;
     text-align: right;
     text-decoration-line: underline;
     color: $colorGold;
   }
 
-  &--button {
+  &__button {
     padding: 13px 33px;
     font-size: 13px;
     line-height: 15px;
   }
 
-  header &--button {
+  header &__button {
     margin-right: 18px;
   }
 }

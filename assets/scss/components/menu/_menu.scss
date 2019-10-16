@@ -9,15 +9,15 @@
   text-transform: uppercase;
   list-style: none;
 
-  &--item {
+  &__item {
     margin: 0 15px;
   }
 
-  &--link {
+  &__link {
     color: $colorWhite;
     text-decoration: none;
     //  Почему не видит этот элемент, как link ? Свойста (text-decoration) от link не применет, если не продублировать !
-    &-selected {
+    &_selected {
       color: $colorGold;
       text-decoration: none;
     }

@@ -4,19 +4,19 @@
   margin: auto;
   background: #131313;
 
-    &--header {
+    &__header {
       max-width: 1276px;
       margin: auto;
     }
 
-      &--h1 {
+      &__h1 {
         position: absolute;
         width: 1px;
         height: 1px;
         visibility: hidden;
       }
 
-    &--footer {
+    &__footer {
       max-width: 1256px;
       min-height: 133px;
       margin: auto;

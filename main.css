@@ -343,17 +343,17 @@ template {
   margin: auto;
   background: #131313;
 }
-.wrapper--header {
+.wrapper__header {
   max-width: 1276px;
   margin: auto;
 }
-.wrapper--h1 {
+.wrapper__h1 {
   position: absolute;
   width: 1px;
   height: 1px;
   visibility: hidden;
 }
-.wrapper--footer {
+.wrapper__footer {
   max-width: 1256px;
   min-height: 133px;
   margin: auto;
@@ -377,7 +377,7 @@ template {
   line-height: 16px;
   text-transform: uppercase;
 }
-.header--logo {
+.header__logo {
   font-weight: 700;
   color: #e3b873;
   text-decoration: none;
@@ -392,14 +392,14 @@ template {
   text-transform: uppercase;
   list-style: none;
 }
-.menu--item {
+.menu__item {
   margin: 0 15px;
 }
-.menu--link {
+.menu__link {
   color: #ffffff;
   text-decoration: none;
 }
-.menu--link-selected {
+.menu__link_selected {
   color: #e3b873;
   text-decoration: none;
 }
@@ -415,18 +415,18 @@ template {
   border-radius: 2px;
 }
 
-.call--link {
+.call__link {
   margin-right: 45px;
   text-align: right;
   text-decoration-line: underline;
   color: #e3b873;
 }
-.call--button {
+.call__button {
   padding: 13px 33px;
   font-size: 13px;
   line-height: 15px;
 }
-header .call--button {
+header .call__button {
   margin-right: 18px;
 }
 
@@ -441,13 +441,13 @@ header .call--button {
   min-width: 82px;
   background: #131313;
 }
-.banner .instagram--inner {
+.banner .instagram__inner {
   position: relative;
   top: 40%;
   transform: rotate(90deg);
   text-transform: uppercase;
 }
-.banner .instagram--inner::after {
+.banner .instagram__inner::after {
   position: relative;
   bottom: 10px;
   left: 110px;
@@ -457,7 +457,7 @@ header .call--button {
   content: "";
   background: #e3b873;
 }
-.banner .instagram--link {
+.banner .instagram__link {
   text-decoration: none;
   color: #e3b873;
 }
@@ -466,7 +466,7 @@ header .call--button {
   margin: 205px 0 205px 60px;
   color: #ffffff;
 }
-.banner .info--header {
+.banner .info__header {
   font-family: "Yeseva One", Arial, sans-serif;
   font-style: normal;
   font-weight: normal;
@@ -474,29 +474,29 @@ header .call--button {
   line-height: 53px;
   text-transform: uppercase;
 }
-.banner .info--header .info--city {
+.banner .info__header .info__city {
   color: #e3b873;
 }
-.banner .info--text {
+.banner .info__text {
   font-family: "FuturaBookC", Arial, sans-serif;
   font-size: 1.1em;
   line-height: 30px;
 }
-.banner .info--button {
+.banner .info__button {
   font-size: 13px;
   line-height: 15px;
 }
-.banner .info--button:first-of-type {
+.banner .info__button:first-of-type {
   padding: 20px 41px;
 }
-.banner .info--button:last-of-type {
+.banner .info__button:last-of-type {
   padding: 20px 22px;
   margin-left: 20px;
   background: transparent;
   color: #ffffff;
   box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
 }
-.banner .button--scroll_down {
+.banner .button__scroll-down {
   position: absolute;
   bottom: -50px;
   font-family: "Yeseva One", Arial, sans-serif;
@@ -506,11 +506,11 @@ header .call--button {
   box-shadow: none;
   text-align: center;
 }
-.banner .button--scroll_down .button--text {
+.banner .button__scroll-down .button__text {
   margin: 40px 50px;
   color: #ffffff;
 }
-.banner .button--scroll_down .button--text .button--arrow {
+.banner .button__scroll-down .button__text .button__arrow {
   margin-left: 15px;
   padding: 5px 8px;
   color: #e3b873;
