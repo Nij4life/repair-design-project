@@ -32,7 +32,7 @@
 
     <main class="main">
 
-      <div class="banner">
+      <section class="banner">
         <div class="instagram"><p class="instagram__inner"><a class="instagram__link" href="http://" target="_blank" rel="noopener noreferrer">Instagram</a></p></div>
         <div class="info banner__info">
           <h2 class="info__header">TURNKEY REPEIR IN THE <br>
@@ -48,42 +48,85 @@
         <button class="button button__scroll-down">
           <p class="button__text">scroll down <span class="button__arrow">&or;</span></p>
         </button>
-      </div>
-      <div class="completed-projects">
-        <div class="completed_projects__description">
+      </section>
+
+      <section class="completed-projects">
+        <div class="completed-projects__description">
             <div class="description">
-              <h2>Completed projects</h2>
-              <p>Only a small part of the work performed by our company is <br>
-                presented on the site. For 14 years on in the construction <br>
+              <h2 class="description__header">Completed <br> projects</h2>
+              <p class="description__text">Only a small part of the work performed by our company is <wbr>
+                presented on the site. For 14 years on in the construction <wbr>
                 market we have made happy more than 1000 families
               </p>
-              <div class="description__info">
-
+              <div class="info description__info">
+                <div class="info__item">
+                  <h3 class="info__h3">City:</h3>
+                  <p>Rostov-on-Don<br>
+                      LCD admiral</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">apartment area:</h3>
+                  <p>81 m2</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">Repair time:</h3>
+                  <p>3.5 months</p>
+                </div>
+                <div class="info__item">
+                  <h3 class="info__h3">Repair Cost:</h3>
+                  <p>Upon request</p>
+                </div>
               </div>
-              <div class="gallery-controls">
-                <ul>
-                  <li> &#8592; </li>
-                  <li> &#8226; </li>
-                  <li> &#8226; </li>
-                  <li> &#8226; </li>
-                  <li> &#8594; </li>
+              <div class="controls">
+                <button class="controls__button"> &#8592; </button>
+                <ul class="controls__nav">
+                    <li class="controls__item controls__item_active"><span ></span></li>
+                    <li class="controls__item"><span></span></li>
+                    <li class="controls__item"><span></span></li>
                 </ul>
+                <button class="controls__button"><p> &#8594;</p> </button>
               </div>
             </div>
         </div>
-        <div class="completed_projects__gallery">
-            <div class="navbar">
-                <ul>
-                  <li><a href="/">Rostov-on-Don, Admiral</a></li>
-                  <li><a href="/">Sochi Thieves</a></li>
-                  <li><a href="/">Rostov-on-Don Patriotic</a></li>
-                </ul>
-              </div>
-              <div class="completed-projects__slider">
-
-              </div>
+        <div class="completed-projects__visual">
+          <ul class="navbar">
+            <li class="navbar__item"><a class="navbar__link_active" href="/">Rostov-on-Don, Admiral</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/">Sochi Thieves</a></li>
+            <li class="navbar__item"><a class="navbar__link" href="/">Rostov-on-Don Patriotic</a></li>
+          </ul>
+          <div class="slider">
+            <div class="slider__item"><a class="slider__link" href="http://"><img class="slider__img" src="/assets/images/slider2-1.jpg" alt="flat 1" width="679" height="482"></a></div>
+            <div class="slider__item_last"><a class="slider__link" href="http://"><img class="slider__img_last" src="/assets/images/slider2-2.jpg" alt="flat 2" width="679" height="482"></a></div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <section class="online-control">
+        <h3 class="online-control__header">online control</h3>
+        <video class="video online-control__video" poster="star.png">
+          <source src="/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+          <source src="/" type='video/webm; codecs="vp8, vorbis"' />
+          Video tag not supported. Download the video <a href="movie.webm">here</a>.
+        </video>
+        <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock.<wbr>
+          At any time, you can go to our website and monitor the progress of work in your<wbr>
+          apartment. You can watch the live broadcast from one of our facilities!<wbr>
+          Leave a request below and you will receive a link to the broadcast.
+        </p>
+        <form class="form online-control__form" action="">
+          <label>
+            <input class="form__input" type="text" name="name" placeholder="What is your name:">
+          </label>
+          <label>
+           <input class="form__input" type="tel" name="phone" placeholder="Your phone number:">
+          </label>
+          <button class="button form__button" type="submit">SUBMIT</button>
+          <label>
+            <input type="checkbox" name="" id="">
+            I agree to the processing of personal data
+          </label>
+        </form>
+      </section>
 
     </main>
 

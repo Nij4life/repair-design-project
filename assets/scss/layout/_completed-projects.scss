@@ -1,0 +1,153 @@
+.completed-projects {
+  margin-top: -20px;
+  background: #131313;
+  color: $colorWhite;
+  display: flex;
+
+  &__description {
+    margin: 175px 50px 0 100px;
+    font-size: 18px;
+    line-height: 29px;
+    flex-shrink: 1;
+    flex-basis: 570px;
+      
+    & .description {
+      &__header {
+        font-size: 1.5em;
+        color: $colorGold;
+        text-transform: uppercase;
+  
+        &::after {
+          content: "";
+          display: inline-block;
+          width: 92px;
+          height: 3px;
+          margin: 0 30px;
+          border-top: 1px solid $colorGold;
+          border-bottom: 1px solid $colorGold;
+        }
+      }
+    }
+     
+
+    & .info {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: 15px;
+      line-height: 20px;
+  
+      &__item:nth-child(2n-1) {
+      flex-basis: 200px;
+      }
+  
+      &__h3 {
+        line-height: 25px;
+        color: $colorGold;
+        text-transform: uppercase;
+      }
+    }
+
+    & .controls {
+      display: flex;
+      align-items: center;
+      margin-top: 60px;
+
+      &__button {
+        padding: 0;
+        font-size: 2em;
+        background: transparent;
+        color: $colorWhite;
+        border: none;
+        outline: none;
+
+        & p {
+          margin: 0;
+        }
+      }
+
+      &__nav {
+        display: flex;
+        padding: 0;
+        margin: 0 30px;
+        list-style: none;
+      }
+
+      &__item {
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin: 0 9px;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+
+        &_active {
+          background: #ffffff;
+        }
+      }
+
+    
+    }
+  }
+
+  &__visual {
+    overflow: hidden;
+    flex-shrink: 2;
+
+    & .navbar {
+      display: flex;
+      margin-top: 125px;
+      margin-bottom: 45px;
+      padding-left: 0;
+
+      font-family: "Yeseva One", $supportFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 19px;
+
+      list-style: none;
+      text-decoration: none;
+      text-transform: uppercase;
+
+      &__item:not(:last-child) {
+        margin-right: 60px;
+      }
+
+      &__link{
+        color: rgba(255, 255, 255, 0.3);
+        text-decoration: none;
+
+        &_active {
+          padding-bottom: 10px;
+          border-bottom: 1px solid $colorGold;
+          color: $colorGold;
+          text-decoration: none;
+        }
+      }
+    }
+
+    & .slider {
+      display: flex;
+      margin-bottom: 405px;
+
+      &__item {
+        margin-right: 20px;
+
+        &_last {
+          overflow: hidden;
+        }
+      }
+
+      &__link {
+        display: block;
+        height: 100%;
+      }
+
+      &__img_last {
+          position: relative;
+          left: -130px;
+        }
+    }
+  }
+
+}

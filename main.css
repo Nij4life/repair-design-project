@@ -359,7 +359,7 @@ template {
   margin: auto;
 }
 .wrapper main {
-  background: #999999;
+  background: #ffffff;
 }
 @media screen and (max-width: 800px) {
   .wrapper {
@@ -413,6 +413,7 @@ template {
   box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
   border: 0;
   border-radius: 2px;
+  outline: none;
 }
 
 .call__link {
@@ -433,8 +434,7 @@ header .call__button {
 .banner {
   position: relative;
   display: flex;
-  flex-wrap: wrap;
-  background: url("/assets/images/slider1.jpg") no-repeat;
+  background: url("/assets/images/banner.jpg") no-repeat;
   background-size: cover;
 }
 .banner .instagram {
@@ -516,6 +516,172 @@ header .call__button {
   color: #e3b873;
   border: 1px solid #e3b873;
   border-radius: 50%;
+}
+
+.completed-projects {
+  margin-top: -20px;
+  background: #131313;
+  color: #ffffff;
+  display: flex;
+}
+.completed-projects__description {
+  margin: 175px 50px 0 100px;
+  font-size: 18px;
+  line-height: 29px;
+  flex-shrink: 1;
+  flex-basis: 570px;
+}
+.completed-projects__description .description__header {
+  font-size: 1.5em;
+  color: #e3b873;
+  text-transform: uppercase;
+}
+.completed-projects__description .description__header::after {
+  content: "";
+  display: inline-block;
+  width: 92px;
+  height: 3px;
+  margin: 0 30px;
+  border-top: 1px solid #e3b873;
+  border-bottom: 1px solid #e3b873;
+}
+.completed-projects__description .info {
+  display: flex;
+  flex-wrap: wrap;
+  font-size: 15px;
+  line-height: 20px;
+}
+.completed-projects__description .info__item:nth-child(2n-1) {
+  flex-basis: 200px;
+}
+.completed-projects__description .info__h3 {
+  line-height: 25px;
+  color: #e3b873;
+  text-transform: uppercase;
+}
+.completed-projects__description .controls {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.completed-projects__description .controls__button {
+  padding: 0;
+  font-size: 2em;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.completed-projects__description .controls__button p {
+  margin: 0;
+}
+.completed-projects__description .controls__nav {
+  display: flex;
+  padding: 0;
+  margin: 0 30px;
+  list-style: none;
+}
+.completed-projects__description .controls__item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.completed-projects__description .controls__item_active {
+  background: #ffffff;
+}
+.completed-projects__visual {
+  overflow: hidden;
+  flex-shrink: 2;
+}
+.completed-projects__visual .navbar {
+  display: flex;
+  margin-top: 125px;
+  margin-bottom: 45px;
+  padding-left: 0;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 19px;
+  list-style: none;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.completed-projects__visual .navbar__item:not(:last-child) {
+  margin-right: 60px;
+}
+.completed-projects__visual .navbar__link {
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.completed-projects__visual .navbar__link_active {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #e3b873;
+  color: #e3b873;
+  text-decoration: none;
+}
+.completed-projects__visual .slider {
+  display: flex;
+  margin-bottom: 405px;
+}
+.completed-projects__visual .slider__item {
+  margin-right: 20px;
+}
+.completed-projects__visual .slider__item_last {
+  overflow: hidden;
+}
+.completed-projects__visual .slider__link {
+  display: block;
+  height: 100%;
+}
+.completed-projects__visual .slider__img_last {
+  position: relative;
+  left: -130px;
+}
+
+.online-control {
+  background: #ffffff;
+}
+.online-control__text {
+  max-width: 680px;
+  margin: auto;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 34px;
+  text-align: center;
+  color: #363636;
+}
+.online-control__form {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 770px;
+  margin: auto;
+  padding: 100px 0;
+}
+.online-control__form .form__input {
+  position: relative;
+  margin-right: 50px;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+  line-height: 30px;
+}
+.online-control__form .form__input::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: block;
+  content: "Name";
+  width: 50px;
+  height: 50px;
+  background: red;
+  color: blue;
+}
+.online-control__form .form__button {
+  padding: 20px 70px;
 }
 
 /*# sourceMappingURL=main.css.map */
