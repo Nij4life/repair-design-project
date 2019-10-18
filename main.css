@@ -367,157 +367,6 @@ template {
   }
 }
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  min-height: 83px;
-  font-family: "FuturaDemiC", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-}
-.header__logo {
-  font-weight: 700;
-  color: #e3b873;
-  text-decoration: none;
-}
-
-.menu {
-  display: flex;
-  padding: 0;
-  font-family: "FuturaBookC", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 16px;
-  text-transform: uppercase;
-  list-style: none;
-}
-.menu__item {
-  margin: 0 15px;
-}
-.menu__link {
-  color: #ffffff;
-  text-decoration: none;
-}
-.menu__link_selected {
-  color: #e3b873;
-  text-decoration: none;
-}
-
-.button {
-  font-family: "FuturaDemiC", Arial, sans-serif;
-  text-align: center;
-  text-transform: uppercase;
-  color: colorWhite;
-  background: #e3b873;
-  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
-  border: 0;
-  border-radius: 2px;
-  outline: none;
-}
-
-.call__link {
-  margin-right: 45px;
-  text-align: right;
-  text-decoration-line: underline;
-  color: #e3b873;
-}
-.call__button {
-  padding: 13px 33px;
-  font-size: 13px;
-  line-height: 15px;
-}
-header .call__button {
-  margin-right: 18px;
-}
-
-.banner {
-  position: relative;
-  display: flex;
-  background: url("/assets/images/banner.jpg") no-repeat;
-  background-size: cover;
-}
-.banner .instagram {
-  min-width: 82px;
-  background: #131313;
-}
-.banner .instagram__inner {
-  position: relative;
-  top: 40%;
-  transform: rotate(90deg);
-  text-transform: uppercase;
-}
-.banner .instagram__inner::after {
-  position: relative;
-  bottom: 10px;
-  left: 110px;
-  display: block;
-  width: 51px;
-  height: 1px;
-  content: "";
-  background: #e3b873;
-}
-.banner .instagram__link {
-  text-decoration: none;
-  color: #e3b873;
-}
-.banner .info {
-  justify-self: stretch;
-  margin: 205px 0 205px 60px;
-  color: #ffffff;
-}
-.banner .info__header {
-  font-family: "Yeseva One", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.2em;
-  line-height: 53px;
-  text-transform: uppercase;
-}
-.banner .info__header .info__city {
-  color: #e3b873;
-}
-.banner .info__text {
-  font-family: "FuturaBookC", Arial, sans-serif;
-  font-size: 1.1em;
-  line-height: 30px;
-}
-.banner .info__button {
-  font-size: 13px;
-  line-height: 15px;
-}
-.banner .info__button:first-of-type {
-  padding: 20px 41px;
-}
-.banner .info__button:last-of-type {
-  padding: 20px 22px;
-  margin-left: 20px;
-  background: transparent;
-  color: #ffffff;
-  box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
-}
-.banner .button__scroll-down {
-  position: absolute;
-  bottom: -50px;
-  font-family: "Yeseva One", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  background: #131313;
-  box-shadow: none;
-  text-align: center;
-}
-.banner .button__scroll-down .button__text {
-  margin: 40px 50px;
-  color: #ffffff;
-}
-.banner .button__scroll-down .button__text .button__arrow {
-  margin-left: 15px;
-  padding: 5px 8px;
-  color: #e3b873;
-  border: 1px solid #e3b873;
-  border-radius: 50%;
-}
-
 .completed-projects {
   margin-top: -20px;
   background: #131313;
@@ -654,16 +503,6 @@ header .call__button {
   flex-direction: column;
   align-items: center;
 }
-.online-control__header {
-  font-family: "Yeseva One", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
-  color: #FFFFFF;
-}
 .online-control__text {
   position: relative;
   max-width: 680px;
@@ -695,9 +534,6 @@ header .call__button {
   margin: auto;
   padding: 100px 0;
 }
-.online-control__form .form__label {
-  position: relative;
-}
 .online-control__form .form__label::after {
   position: absolute;
   top: -15px;
@@ -711,29 +547,273 @@ header .call__button {
   content: "Phone";
 }
 .online-control__form .form__input {
-  position: relative;
   margin-right: 50px;
-  border: none;
-  outline: none;
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
-  line-height: 30px;
-}
-.online-control__form .form__input::placeholder {
-  color: #363636;
-}
-.online-control__form input[type=checkbox] {
-  background: #e3b873;
-  color: #ffffff;
 }
 .online-control__form .form__button {
+  top: -20px;
   padding: 20px 70px;
 }
+.online-control__form .checkbox__label {
+  left: -200px;
+  margin-left: 90px;
+}
 
-.img-after-headers {
+.types-repair {
+  background: #ffffff;
+}
+.types-repair .section-header {
+  color: #000000;
+}
+.types-repair .section-header-img {
+  position: absolute;
+  left: 49%;
+}
+.types-repair .card-list {
+  margin-top: 80px;
+}
+.types-repair__form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding: 200px 0;
+  background: url("./assets/images/house.jpg") no-repeat;
+}
+.types-repair .types-repair__form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-right: 90px;
+  background: #131313;
+}
+.types-repair .types-repair__form .form__title {
+  margin: 30px auto;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  text-align: center;
+  color: #ffffff;
+  align-self: center;
+}
+.types-repair .types-repair__form .form__input {
+  width: 408px;
+  margin: 40px 49px;
+  background: #131313;
+  color: #ffffff;
+}
+.types-repair .types-repair__form .form__input::placeholder {
+  color: #ffffff;
+}
+.types-repair .types-repair__form label:not(:last-of-type)::before {
+  position: absolute;
+  top: 10px;
+  left: 50px;
+  content: "Name";
+  width: 50px;
+  height: 50px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 15px;
+  color: rgba(255, 255, 255, 0.5);
+}
+.types-repair .types-repair__form .checkbox__label {
+  align-self: flex-start;
+  left: 0px;
+  margin: 0 0 40px 50px;
+  color: #ffffff;
+}
+.types-repair .types-repair__form .form__button {
+  padding: 15px 20px;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
+  margin: 0 49px 27px 0;
+}
+.types-repair .icon-pig {
+  display: flex;
+  margin: 40px 140px 0 0;
+}
+.types-repair .icon-pig__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 72px;
+  height: 72px;
+  margin-right: 25px;
+  background: #e3b873;
+  border-radius: 50%;
+}
+.types-repair .icon-pig__text {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 25px;
+  color: #e3b873;
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 83px;
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+}
+.header__logo {
+  font-weight: 700;
+  color: #e3b873;
+  text-decoration: none;
+}
+
+.menu {
+  display: flex;
+  padding: 0;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 16px;
+  text-transform: uppercase;
+  list-style: none;
+}
+.menu__item {
+  margin: 0 15px;
+}
+.menu__link {
+  color: #ffffff;
+  text-decoration: none;
+}
+.menu__link_selected {
+  color: #e3b873;
+  text-decoration: none;
+}
+
+.button {
+  font-family: "FuturaDemiC", Arial, sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  color: colorWhite;
+  background: #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.2);
+  border: 0;
+  border-radius: 2px;
+  outline: none;
+}
+
+.call__link {
+  margin-right: 45px;
+  text-align: right;
+  text-decoration-line: underline;
+  color: #e3b873;
+}
+.call__button {
+  padding: 13px 33px;
+  font-size: 13px;
+  line-height: 15px;
+}
+header .call__button {
+  margin-right: 18px;
+}
+
+.banner {
+  position: relative;
+  display: flex;
+  background: url("./assets/images/banner.jpg") no-repeat;
+  background-size: cover;
+}
+.banner .instagram {
+  min-width: 82px;
+  background: #131313;
+}
+.banner .instagram__inner {
+  position: relative;
+  top: 40%;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+.banner .instagram__inner::after {
+  position: relative;
+  bottom: 10px;
+  left: 110px;
+  display: block;
+  width: 51px;
+  height: 1px;
+  content: "";
+  background: #e3b873;
+}
+.banner .instagram__link {
+  text-decoration: none;
+  color: #e3b873;
+}
+.banner .info {
+  justify-self: stretch;
+  margin: 205px 0 205px 60px;
+  color: #ffffff;
+}
+.banner .info__header {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+.banner .info__header .info__city {
+  color: #e3b873;
+}
+.banner .info__text {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 30px;
+}
+.banner .info__button {
+  font-size: 13px;
+  line-height: 15px;
+}
+.banner .info__button:first-of-type {
+  padding: 20px 41px;
+}
+.banner .info__button:last-of-type {
+  padding: 20px 22px;
+  margin-left: 20px;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
+}
+.banner .button__scroll-down {
+  position: absolute;
+  bottom: -50px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  background: #131313;
+  box-shadow: none;
+  text-align: center;
+}
+.banner .button__scroll-down .button__text {
+  margin: 40px 50px;
+  color: #ffffff;
+}
+.banner .button__scroll-down .button__text .button__arrow {
+  margin-left: 15px;
+  padding: 5px 8px;
+  color: #e3b873;
+  border: 1px solid #e3b873;
+  border-radius: 50%;
+}
+
+.section-header {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.section-header-img {
   position: relative;
   margin-bottom: 30px;
 }
-.img-after-headers::before {
+.section-header-img::before {
   position: absolute;
   top: 15px;
   left: -50px;
@@ -743,7 +823,7 @@ header .call__button {
   width: 32px;
   background: #e3b873;
 }
-.img-after-headers::after {
+.section-header-img::after {
   position: absolute;
   top: 15px;
   right: -50px;
@@ -752,6 +832,92 @@ header .call__button {
   height: 2px;
   width: 32px;
   background: #e3b873;
+}
+
+.card-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0 0 170px 0;
+  margin: auto;
+  list-style: none;
+}
+.card-list__item {
+  position: relative;
+  max-width: 392px;
+}
+.card-list__item:not(:last-child) {
+  margin-right: 30px;
+}
+.card-list__item .item__description {
+  position: absolute;
+  top: 66%;
+  left: 8%;
+  z-index: 2;
+  width: 74%;
+  padding: 40px 0 40px 45px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background: #ffffff;
+  color: #959595;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  list-style: initial;
+}
+.card-list__item .item__description .item__description-header {
+  color: #363636;
+}
+.card-list__item .item__description li {
+  margin-bottom: 10px;
+}
+.card-list__item .item__button {
+  position: absolute;
+  z-index: 50;
+  bottom: -42%;
+  left: 8%;
+  padding: 17px 20px;
+  color: #FFFFFF;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+  line-height: 25px;
+  text-transform: uppercase;
+}
+
+.form__input {
+  position: relative;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+  line-height: 30px;
+}
+.form__input::placeholder {
+  color: #363636;
+}
+.form__label {
+  position: relative;
+}
+.form .checkbox {
+  visibility: hidden;
+  position: absolute;
+}
+.form .checkbox:checked + label {
+  background: gray;
+}
+.form .checkbox__label {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  background: #e3b873;
+}
+.form .checkbox__label:after {
+  position: relative;
+  left: 40px;
+  top: 3px;
+  width: 270px;
+  display: block;
+  content: "I agree to the processing of personal data";
+}
+.form .form__button {
+  position: relative;
+  color: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

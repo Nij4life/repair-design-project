@@ -1,11 +1,14 @@
 @import 'vendors/normalize';
 @import 'abstracts/variables';
 @import 'layout/wrapper';
+@import 'layout/completed-projects';
+@import 'layout/online-control';
+@import 'layout/types-repair';
 @import 'components/header/header';
 @import 'components/menu/menu';
 @import 'components/button/button';
 @import 'components/call/call';
 @import 'components/banner/banner';
-@import 'layout/completed-projects';
-@import 'layout/online-control';
-@import 'components/img-after-headers';
+@import 'components/section-header';
+@import 'components/card-list';
+@import 'components/form';

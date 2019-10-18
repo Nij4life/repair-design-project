@@ -2,7 +2,7 @@
 .banner {
   position: relative;
   display: flex;
-  background: url('/assets/images/banner.jpg') no-repeat;
+  background: url('./assets/images/banner.jpg') no-repeat;
   background-size: cover;
 
   & .instagram {
@@ -26,7 +26,7 @@
         background: $colorGold;
       }
     }
-    
+
     &__link {
       text-decoration: none;
       color: $colorGold;
@@ -86,7 +86,7 @@
     background: #131313;
     box-shadow: none;
     text-align: center;
- 
+
     & .button__text {
       margin: 40px 50px;
       color: $colorWhite;

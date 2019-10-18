@@ -10,7 +10,7 @@
 <body>
   <div class="wrapper">
     <header class="wrapper__header">
-      <h1 class="wrapper__h1">repair-design-project</h1> 
+      <h1 class="wrapper__h1">repair-design-project</h1>
       <div class="header">
         <a class="header__logo" href="index.html">IC-"Repair-Design-Project"</a>
         <nav>
@@ -95,18 +95,18 @@
             <li class="navbar__item"><a class="navbar__link" href="/">Rostov-on-Don Patriotic</a></li>
           </ul>
           <div class="slider">
-            <div class="slider__item"><a class="slider__link" href="http://"><img class="slider__img" src="/assets/images/slider2-1.jpg" alt="flat 1" width="679" height="482"></a></div>
-            <div class="slider__item_last"><a class="slider__link" href="http://"><img class="slider__img_last" src="/assets/images/slider2-2.jpg" alt="flat 2" width="679" height="482"></a></div>
+            <div class="slider__item"><a class="slider__link" href="http://"><img class="slider__img" src="./assets/images/slider2-1.jpg" alt="flat 1" width="679" height="482"></a></div>
+            <div class="slider__item_last"><a class="slider__link" href="http://"><img class="slider__img_last" src="./assets/images/slider2-2.jpg" alt="flat 2" width="679" height="482"></a></div>
           </div>
         </div>
       </section>
 
       <section class="online-control">
         <div class="online-control__top">
-            <h3 class="online-control__header">online control</h3>
-            <span class="img-after-headers"><img src="/assets/images/icon_camera.png" alt=""></span> 
-           
-              <iframe width="817" height="434" src="https://www.youtube.com/embed/-ylq9w9EFSQ" frameborder="0" 
+            <h3 class="section-header">online control</h3>
+            <span class="section-header-img"><img src="./assets/images/icon_camera.png" alt=""></span>
+
+              <iframe width="817" height="434" src="https://www.youtube.com/embed/-ylq9w9EFSQ" frameborder="0"
               allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
             </iframe>
         </div>
@@ -123,11 +123,81 @@
            <input class="form__input" type="tel" name="phone" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
           </label>
           <button class="button form__button" type="submit">SUBMIT</button>
-          <label>
-            <input class="form__checkbox" type="checkbox" checked required>
-            I agree to the processing of personal data
-          </label>
+          <input class="checkbox" type="checkbox" id="online-control-checkbox" required>
+          <label class="checkbox__label" for="online-control-checkbox"></label>
         </form>
+      </section>
+
+      <section class="types-repair">
+        <h3 class="section-header">TYPES OF REPAIR</h3>
+        <span class="section-header-img"><img src="./assets/images/icon_build.png" alt=""></span>
+        <ul class="card-list">
+          <li class="item card-list__item">
+            <img src="./assets/images/flat1.jpg" alt="fla1">
+            <ul class="item__description">
+              <lh class="item__description-header">Redecorating</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 900 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat2.jpg" alt="fla2">
+            <ul class="item__description">
+              <lh class="item__description-header">Overhaul</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 1800 rub / m2</button>
+          </li>
+          <li class="item card-list__item">
+            <img src="./assets/images/flat3.jpg" alt="fla3">
+            <ul class="item__description">
+              <lh class="item__description-header">Designer Repair</lh>
+              <li>Dismantling of old coatings</li>
+              <li>Wallpapering</li>
+              <li>Painting walls and ceilings</li>
+              <li>Laying flooring</li>
+              <li>Replacing plumbing</li>
+              <li>Replacing sockets and switches</li>
+              <li>Replacing doors</li>
+            </ul>
+            <button class="button item__button">from 4000 rub / m2</button>
+          </li>
+        </ul>
+        <div class="types-repair__form-wrapper">
+          <form class="form types-repair__form" action="">
+            <h3 class="form__title">Leave a request for free<br>departure of the measurer</h3>
+            <label  class="form__label">
+              <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}" required>
+            </label>
+            <label  class="form__label">
+              <input class="form__input" type="tel" name="tel" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
+            </label>
+            <label  class="form__label">
+              <input class="form__input" type="email" name="email" placeholder="Your email:" pattern="^\w+@[a-zA-Z]+\.[a-zA-Z]{2}" required>
+            </label>
+            <input class="checkbox" type="checkbox" name="checkbox" id="types-repair-checkbox" required>
+            <label class="checkbox__label" for="types-repair-checkbox"></label>
+            <button class="button form__button" type="submit">Call the measurer</button>
+          </form>
+          <div class="icon-pig">
+            <span class="icon-pig__img"><img src="./assets/images/icon_pig.png" alt="icon_pig"></span>
+            <p class="icon-pig__text">Help save 10 - 20% of the<br>
+              cost of materials
+            </p>
+          </div>
+        </div>
       </section>
 
     </main>
