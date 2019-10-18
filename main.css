@@ -643,23 +643,72 @@ header .call__button {
 }
 
 .online-control {
+  position: relative;
   background: #ffffff;
 }
+.online-control__top {
+  position: absolute;
+  top: -350px;
+  left: calc( 50% - 817px / 2 );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.online-control__header {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #FFFFFF;
+}
 .online-control__text {
+  position: relative;
   max-width: 680px;
   margin: auto;
+  padding-top: 300px;
   font-family: "FuturaBookC", Arial, sans-serif;
   font-size: 20px;
   line-height: 34px;
   text-align: center;
   color: #363636;
 }
+.online-control__text::before {
+  position: absolute;
+  top: 280px;
+  left: calc( 50% - 55px / 2 );
+  content: "";
+  display: block;
+  height: 2px;
+  width: 55px;
+  background: #e3b873;
+}
 .online-control__form {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
+  align-content: space-between;
   max-width: 770px;
+  min-height: 120px;
   margin: auto;
   padding: 100px 0;
+}
+.online-control__form .form__label {
+  position: relative;
+}
+.online-control__form .form__label::after {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  content: "Name";
+  width: 50px;
+  height: 50px;
+  color: rgba(54, 54, 54, 0.5);
+}
+.online-control__form .form__label:nth-child(2)::after {
+  content: "Phone";
 }
 .online-control__form .form__input {
   position: relative;
@@ -669,19 +718,40 @@ header .call__button {
   border-bottom: 1px solid rgba(54, 54, 54, 0.3);
   line-height: 30px;
 }
-.online-control__form .form__input::after {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: block;
-  content: "Name";
-  width: 50px;
-  height: 50px;
-  background: red;
-  color: blue;
+.online-control__form .form__input::placeholder {
+  color: #363636;
+}
+.online-control__form input[type=checkbox] {
+  background: #e3b873;
+  color: #ffffff;
 }
 .online-control__form .form__button {
   padding: 20px 70px;
+}
+
+.img-after-headers {
+  position: relative;
+  margin-bottom: 30px;
+}
+.img-after-headers::before {
+  position: absolute;
+  top: 15px;
+  left: -50px;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 32px;
+  background: #e3b873;
+}
+.img-after-headers::after {
+  position: absolute;
+  top: 15px;
+  right: -50px;
+  content: "";
+  display: block;
+  height: 2px;
+  width: 32px;
+  background: #e3b873;
 }
 
 /*# sourceMappingURL=main.css.map */

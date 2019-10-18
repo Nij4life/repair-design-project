@@ -102,27 +102,29 @@
       </section>
 
       <section class="online-control">
-        <h3 class="online-control__header">online control</h3>
-        <video class="video online-control__video" poster="star.png">
-          <source src="/" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-          <source src="/" type='video/webm; codecs="vp8, vorbis"' />
-          Video tag not supported. Download the video <a href="movie.webm">here</a>.
-        </video>
+        <div class="online-control__top">
+            <h3 class="online-control__header">online control</h3>
+            <span class="img-after-headers"><img src="/assets/images/icon_camera.png" alt=""></span> 
+           
+              <iframe width="817" height="434" src="https://www.youtube.com/embed/-ylq9w9EFSQ" frameborder="0" 
+              allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+            </iframe>
+        </div>
         <p class="online-control__text">At each facility, a camera is installed that broadcasts the progress of work on the clock.<wbr>
           At any time, you can go to our website and monitor the progress of work in your<wbr>
           apartment. You can watch the live broadcast from one of our facilities!<wbr>
           Leave a request below and you will receive a link to the broadcast.
         </p>
         <form class="form online-control__form" action="">
-          <label>
-            <input class="form__input" type="text" name="name" placeholder="What is your name:">
+          <label class="form__label">
+            <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}\b" required>
           </label>
-          <label>
-           <input class="form__input" type="tel" name="phone" placeholder="Your phone number:">
+          <label class="form__label">
+           <input class="form__input" type="tel" name="phone" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
           </label>
           <button class="button form__button" type="submit">SUBMIT</button>
           <label>
-            <input type="checkbox" name="" id="">
+            <input class="form__checkbox" type="checkbox" checked required>
             I agree to the processing of personal data
           </label>
         </form>
