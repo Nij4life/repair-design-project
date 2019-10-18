@@ -648,6 +648,75 @@ template {
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 
+.we-realize {
+  display: flex;
+  max-height: 868px;
+  background: url("./assets/images/bg_block5.jpg") no-repeat;
+  background-size: cover;
+}
+.we-realize__left {
+  min-width: 370px;
+  margin: 137px 130px 75px 100px;
+}
+.we-realize__left h2 {
+  margin-bottom: 40px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.7em;
+  line-height: 37px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.we-realize__left .we-realize-list {
+  padding: 0;
+  list-style: none;
+}
+.we-realize__left .we-realize-list__item, .we-realize__left .we-realize-list__item_active {
+  margin-bottom: 15px;
+}
+.we-realize__left .we-realize-list__item a, .we-realize__left .we-realize-list__item_active a {
+  font-size: 20px;
+  line-height: 34px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.we-realize__left .we-realize-list__item a:hover, .we-realize__left .we-realize-list__item_active a:hover {
+  border-bottom: 2px solid #e3b873;
+  color: rgba(227, 184, 115, 0.5);
+}
+.we-realize__left .we-realize-list__item_active a {
+  color: #e3b873;
+  border-bottom: 2px solid #e3b873;
+}
+.we-realize__right {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-right: 80px;
+}
+.we-realize__right .we-realize__img {
+  position: relative;
+}
+.we-realize__right .we-realize__img:first-of-type {
+  top: -30px;
+}
+.we-realize__right .we-realize__img:nth-of-type(2) {
+  top: -100px;
+}
+.we-realize__right .we-realize__img:nth-of-type(3) {
+  bottom: -20px;
+}
+.we-realize__right .we-realize__img:last-of-type {
+  top: -340px;
+}
+
+.test {
+  height: 400px;
+  background: chocolate;
+}
+
 .header {
   display: flex;
   justify-content: space-between;

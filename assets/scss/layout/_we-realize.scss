@@ -1,0 +1,84 @@
+.we-realize {
+  display: flex;
+  max-height: 868px;
+  background: url("./assets/images/bg_block5.jpg") no-repeat;
+  background-size: cover;
+
+  &__left {
+    min-width: 370px;
+    margin: 137px 130px 75px 100px;
+
+    & h2 {
+      margin-bottom: 40px;
+      font-family: "Yeseva One", $supportFont;
+      font-style: normal;
+      font-weight: normal;
+      font-size: 1.7em;
+      line-height: 37px;
+      text-transform: uppercase;
+      color: $colorGold;
+    }
+
+    & .we-realize-list {
+      padding: 0;
+      list-style: none;
+
+      &__item,
+      &__item_active {
+        margin-bottom: 15px;
+
+        & a {
+          font-size: 20px;
+          line-height: 34px;
+          color: #ffffff;
+          text-decoration: none;
+
+          &:hover {
+            border-bottom: 2px solid $colorGold;
+            color: rgb(227, 184, 115, 0.5);
+          }
+        }
+      }
+
+      &__item_active a {
+        color: $colorGold;
+        border-bottom: 2px solid $colorGold;
+      }
+    }
+  }
+
+  &__right {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 80px;
+
+    & .we-realize__img {
+      position: relative;
+
+
+      &:first-of-type {
+        top: -30px;
+      }
+
+      &:nth-of-type(2) {
+       top: -100px;
+      }
+
+      &:nth-of-type(3) {
+        bottom: -20px;
+      }
+
+      &:last-of-type {
+        top: -340px;
+      }
+    }
+  }
+}
+
+
+.test {
+  height: 400px;
+  background: chocolate;
+}
