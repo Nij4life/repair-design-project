@@ -1,7 +1,7 @@
 .menu {
   display: flex;
   padding: 0;
-  
+
   font-family: "FuturaBookC",$supportFont;
   font-size: 14px;
   line-height: 16px;
@@ -16,6 +16,13 @@
   &__link {
     color: $colorWhite;
     text-decoration: none;
+
+    &:hover,
+    &_selected:hover {
+      border-bottom: 2px solid $colorGold;
+      box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+      color: #f0da7a;
+    }
     //  Почему не видит этот элемент, как link ? Свойста (text-decoration) от link не применет, если не продублировать !
     &_selected {
       color: $colorGold;

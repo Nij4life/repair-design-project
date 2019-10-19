@@ -367,6 +367,97 @@ template {
   }
 }
 
+.banner {
+  position: relative;
+  display: flex;
+  background: url("./assets/images/banner.jpg") no-repeat;
+  background-size: cover;
+}
+.banner .instagram {
+  min-width: 82px;
+  background: #131313;
+}
+.banner .instagram__inner {
+  position: relative;
+  top: 40%;
+  transform: rotate(90deg);
+  text-transform: uppercase;
+}
+.banner .instagram__inner:hover a {
+  color: #ffffff;
+  box-shadow: 0 0 15px #e3b873;
+}
+.banner .instagram__inner::after {
+  position: relative;
+  bottom: 10px;
+  left: 110px;
+  display: block;
+  width: 51px;
+  height: 1px;
+  content: "";
+  background: #e3b873;
+}
+.banner .instagram__link {
+  text-decoration: none;
+  color: #e3b873;
+}
+.banner .info {
+  justify-self: stretch;
+  margin: 205px 0 205px 60px;
+  color: #ffffff;
+}
+.banner .info__header {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 53px;
+  text-transform: uppercase;
+}
+.banner .info__header .info__city {
+  color: #e3b873;
+}
+.banner .info__text {
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 1.1em;
+  line-height: 30px;
+}
+.banner .info__button {
+  font-size: 13px;
+  line-height: 15px;
+}
+.banner .info__button:first-of-type {
+  padding: 20px 41px;
+}
+.banner .info__button:last-of-type {
+  padding: 20px 22px;
+  margin-left: 20px;
+  background: transparent;
+  color: #ffffff;
+  box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
+}
+.banner .button__scroll-down {
+  position: absolute;
+  bottom: -50px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 19px;
+  background: #131313;
+  box-shadow: none;
+  text-align: center;
+}
+.banner .button__scroll-down .button__text {
+  margin: 40px 50px;
+  color: #ffffff;
+}
+.banner .button__scroll-down .button__text .button__arrow {
+  margin-left: 15px;
+  padding: 5px 8px;
+  color: #e3b873;
+  border: 1px solid #e3b873;
+  border-radius: 50%;
+}
+
 .completed-projects {
   margin-top: -20px;
   background: #131313;
@@ -408,39 +499,6 @@ template {
   color: #e3b873;
   text-transform: uppercase;
 }
-.completed-projects__description .controls {
-  display: flex;
-  align-items: center;
-  margin-top: 60px;
-}
-.completed-projects__description .controls__button {
-  padding: 0;
-  font-size: 2em;
-  background: transparent;
-  color: #ffffff;
-  border: none;
-  outline: none;
-}
-.completed-projects__description .controls__button p {
-  margin: 0;
-}
-.completed-projects__description .controls__nav {
-  display: flex;
-  padding: 0;
-  margin: 0 30px;
-  list-style: none;
-}
-.completed-projects__description .controls__item {
-  display: block;
-  width: 10px;
-  height: 10px;
-  margin: 0 9px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.3);
-}
-.completed-projects__description .controls__item_active {
-  background: #ffffff;
-}
 .completed-projects__visual {
   overflow: hidden;
   flex-shrink: 2;
@@ -471,6 +529,15 @@ template {
   border-bottom: 1px solid #e3b873;
   color: #e3b873;
   text-decoration: none;
+}
+.completed-projects__visual .navbar__link_active:hover {
+  padding-bottom: 5px;
+  border-bottom: 2px solid #e3b873;
+  color: #e6dbab;
+}
+.completed-projects__visual .navbar__link:hover {
+  border-bottom: 2px solid #e3b873;
+  padding-bottom: 5px;
 }
 .completed-projects__visual .slider {
   display: flex;
@@ -683,7 +750,7 @@ template {
 }
 .we-realize__left .we-realize-list__item a:hover, .we-realize__left .we-realize-list__item_active a:hover {
   border-bottom: 2px solid #e3b873;
-  color: rgba(227, 184, 115, 0.5);
+  color: #f0da7a;
 }
 .we-realize__left .we-realize-list__item_active a {
   color: #e3b873;
@@ -717,6 +784,148 @@ template {
   background: chocolate;
 }
 
+.design-project {
+  margin-top: 100px;
+}
+.design-project .section-header {
+  color: #181818;
+}
+.design-project .section-header-img {
+  left: 49%;
+}
+.design-project .section-header-img::before, .design-project .section-header-img::after {
+  top: 0;
+}
+.design-project__text {
+  max-width: 760px;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 30px;
+  font-family: "FuturaBookC", Arial, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  text-align: center;
+}
+.design-project .item .item__button {
+  padding-right: 70px;
+  padding-left: 33px;
+}
+.design-project .item:first-child .item__button {
+  bottom: -90px;
+}
+.design-project .item:last-child .item__button {
+  bottom: -315px;
+}
+
+.six-steps {
+  background: #000;
+  margin-top: -330px;
+  padding-bottom: 300px;
+}
+.six-steps__inner {
+  display: flex;
+  padding-top: 430px;
+  color: #ffffff;
+}
+.six-steps__inner .description {
+  max-width: 345px;
+  margin-left: 99px;
+  margin-right: 137px;
+}
+.six-steps__inner .description .six-steps__header {
+  position: relative;
+  margin-bottom: 80px;
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 2.2em;
+  line-height: 53px;
+  text-transform: uppercase;
+  color: #e3b873;
+}
+.six-steps__inner .description .six-steps__header::before {
+  position: absolute;
+  top: -35px;
+  left: 0;
+  font-size: 15px;
+  line-height: 21px;
+  color: #ffffff;
+  content: "How we are working";
+}
+.six-steps__inner .description .six-steps__header::after {
+  position: absolute;
+  bottom: 25px;
+  right: 0;
+  display: block;
+  width: 90px;
+  height: 1px;
+  background: #e3b873;
+  content: "";
+}
+.six-steps__inner .description__page {
+  font-size: 18px;
+}
+.six-steps__inner .description__title {
+  font-size: 15px;
+  color: #e3b873;
+}
+.six-steps__inner .description__text {
+  font-family: FuturaBookC;
+  font-size: 15px;
+  line-height: 25px;
+}
+.six-steps__inner .description .control {
+  margin-top: 70px;
+}
+.six-steps__visual {
+  padding-top: 30px;
+}
+.six-steps__visual .navbar {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0;
+  list-style: none;
+}
+.six-steps__visual .navbar li:first-child span, .six-steps__visual .navbar li:first-child + li span, .six-steps__visual .navbar li:first-child + li + li span {
+  bottom: -50px;
+}
+.six-steps__visual .navbar__item, .six-steps__visual .navbar__item_active {
+  position: relative;
+  margin: 45px 30% 45px 0;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(227, 184, 115, 0.3);
+}
+.six-steps__visual .navbar__item_active {
+  border-bottom: 1px solid #e3b873;
+}
+.six-steps__visual .navbar__item_active a, .six-steps__visual .navbar__item_active .navbar__text {
+  color: #ffffff;
+}
+.six-steps__visual .navbar__link {
+  font-family: "Yeseva One", Arial, sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 21px;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.3);
+  text-decoration: none;
+}
+.six-steps__visual .navbar span {
+  position: absolute;
+  left: 0;
+  bottom: -30px;
+  display: block;
+  width: 140px;
+  font-size: 15px;
+  line-height: 18px;
+  color: rgba(255, 255, 255, 0.3);
+}
+.six-steps__visual .slider img {
+  width: 100%;
+  max-width: 805px;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -731,6 +940,10 @@ template {
   font-weight: 700;
   color: #e3b873;
   text-decoration: none;
+}
+.header__logo:hover {
+  box-shadow: 0px 0px 10px 10px rgba(227, 184, 115, 0.5);
+  color: #f0da7a;
 }
 
 .menu {
@@ -749,6 +962,11 @@ template {
   color: #ffffff;
   text-decoration: none;
 }
+.menu__link:hover, .menu__link_selected:hover {
+  border-bottom: 2px solid #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+  color: #f0da7a;
+}
 .menu__link_selected {
   color: #e3b873;
   text-decoration: none;
@@ -765,12 +983,21 @@ template {
   border-radius: 2px;
   outline: none;
 }
+.button:hover {
+  box-shadow: 0px 5px 15px #e3b873 !important;
+  color: #db1f1f !important;
+}
 
 .call__link {
   margin-right: 45px;
   text-align: right;
   text-decoration-line: underline;
   color: #e3b873;
+}
+.call__link:hover {
+  border-bottom: 2px solid #e3b873;
+  box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.5);
+  color: #f0da7a;
 }
 .call__button {
   padding: 13px 33px;
@@ -779,93 +1006,6 @@ template {
 }
 header .call__button {
   margin-right: 18px;
-}
-
-.banner {
-  position: relative;
-  display: flex;
-  background: url("./assets/images/banner.jpg") no-repeat;
-  background-size: cover;
-}
-.banner .instagram {
-  min-width: 82px;
-  background: #131313;
-}
-.banner .instagram__inner {
-  position: relative;
-  top: 40%;
-  transform: rotate(90deg);
-  text-transform: uppercase;
-}
-.banner .instagram__inner::after {
-  position: relative;
-  bottom: 10px;
-  left: 110px;
-  display: block;
-  width: 51px;
-  height: 1px;
-  content: "";
-  background: #e3b873;
-}
-.banner .instagram__link {
-  text-decoration: none;
-  color: #e3b873;
-}
-.banner .info {
-  justify-self: stretch;
-  margin: 205px 0 205px 60px;
-  color: #ffffff;
-}
-.banner .info__header {
-  font-family: "Yeseva One", Arial, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 2.2em;
-  line-height: 53px;
-  text-transform: uppercase;
-}
-.banner .info__header .info__city {
-  color: #e3b873;
-}
-.banner .info__text {
-  font-family: "FuturaBookC", Arial, sans-serif;
-  font-size: 1.1em;
-  line-height: 30px;
-}
-.banner .info__button {
-  font-size: 13px;
-  line-height: 15px;
-}
-.banner .info__button:first-of-type {
-  padding: 20px 41px;
-}
-.banner .info__button:last-of-type {
-  padding: 20px 22px;
-  margin-left: 20px;
-  background: transparent;
-  color: #ffffff;
-  box-shadow: 0px 0px 4px 2px rgba(255, 255, 255, 0.9);
-}
-.banner .button__scroll-down {
-  position: absolute;
-  bottom: -50px;
-  font-family: "Yeseva One", Arial, sans-serif;
-  font-size: 14px;
-  line-height: 19px;
-  background: #131313;
-  box-shadow: none;
-  text-align: center;
-}
-.banner .button__scroll-down .button__text {
-  margin: 40px 50px;
-  color: #ffffff;
-}
-.banner .button__scroll-down .button__text .button__arrow {
-  margin-left: 15px;
-  padding: 5px 8px;
-  color: #e3b873;
-  border: 1px solid #e3b873;
-  border-radius: 50%;
 }
 
 .section-header {
@@ -987,6 +1127,46 @@ header .call__button {
 .form .form__button {
   position: relative;
   color: #ffffff;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  margin-top: 60px;
+}
+.controls__button {
+  padding: 0;
+  font-size: 2em;
+  background: transparent;
+  color: #ffffff;
+  border: none;
+  outline: none;
+}
+.controls__button:hover {
+  color: green;
+}
+.controls__button p {
+  margin: 0;
+}
+.controls__nav {
+  display: flex;
+  padding: 0;
+  margin: 0 30px;
+  list-style: none;
+}
+.controls__item {
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 0 9px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+}
+.controls__item:hover {
+  background: green;
+}
+.controls__item_active {
+  background: #ffffff;
 }
 
 /*# sourceMappingURL=main.css.map */

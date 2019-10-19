@@ -1,0 +1,52 @@
+.design-project {
+  margin-top: 100px;
+
+  & .section-header {
+    color: #181818;
+  }
+
+  & .section-header-img {
+    left: 49%;
+
+    &::before,
+    &::after {
+      top: 0;
+    }
+  }
+
+  &__text {
+    max-width: 760px;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    font-family: "FuturaBookC", $supportFont;
+    font-size: 20px;
+    line-height: 27px;
+    text-align: center;
+  }
+
+  & .item {
+
+    .item__button {
+      padding-right: 70px;
+      padding-left: 33px;;
+
+    }
+
+    &:first-child .item__button{
+      bottom: -90px;
+    }
+
+    &:last-child .item__button{
+      bottom: -315px;
+    }
+  }
+
+    // &:first-of-type {
+    //   // bottom: -140px;
+    // }
+    // &:last-of-type {
+    //   bottom: -180px;
+    // }
+
+}
