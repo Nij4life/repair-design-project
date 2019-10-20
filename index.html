@@ -46,7 +46,7 @@
           <button class="button info__button">Submit your Application</button>
         </div>
         <button class="button button__scroll-down">
-          <p class="button__text">scroll down <span class="button__arrow">&or;</span></p>
+          <span class="button__text"></s>scroll down <span class="button__arrow">&or;</span></p>
         </button>
       </section>
 
@@ -84,7 +84,7 @@
                     <li class="controls__item"><span></span></li>
                     <li class="controls__item"><span></span></li>
                 </ul>
-                <button class="controls__button"><p> &#8594;</p> </button>
+                <button class="controls__button"> &#8594; </button>
               </div>
             </div>
         </div>
@@ -317,7 +317,7 @@
             <ul class="navbar">
               <li class="navbar__item_active">
                 <a class="navbar__link" href="/">01</a>
-                <span class="navbar__text">Departure to<br>room measurements</spa>
+                <span class="navbar__text">Departure to<br>room measurements</span>
               </li>
               <li class="navbar__item">
                 <a class="navbar__link" href="/">02</a>
@@ -356,6 +356,7 @@
               500 families and we are not going to stop</p>
           <ul class="list-photo">
             <li class="list-photo__item">
+              <img class="list-photo__icon" src="./assets/images/icon_team1.png" alt="icon team 1">
               <img src="./assets/images/photo1.jpg" alt="photo 1">
               <div class="list-photo__info">
                 <h4>Dmitry tulyakov</h4>
@@ -364,6 +365,7 @@
               </div>
             </li>
             <li class="list-photo__item">
+                <img class="list-photo__icon" src="./assets/images/icon_team2.png" alt="icon team 2">
               <img src="./assets/images/photo2.jpg" alt="photo 2">
               <div class="list-photo__info">
                 <h4>Larisa Kotlyarova</h4>
@@ -372,6 +374,7 @@
               </div>
             </li>
             <li class="list-photo__item">
+                <img class="list-photo__icon" src="./assets/images/icon_team3.png" alt="icon team 3">
               <img src="./assets/images/photo3.jpg" alt="photo 3">
               <div class="list-photo__info">
                 <h4>Alexey Efimov</h4>
@@ -385,6 +388,74 @@
             with work experience of 6 years.<br>
             We do not have laborers and guest workers, each employee carries out<wbr> work corresponding to his specialty.
         </p>
+      </section>
+
+      <section class="our-clients">
+          <h3 class="section-header">our clients</h3>
+          <span class="section-header-img"><img src="./assets/images/icon_draw.png" alt="icon draw"></span>
+          <p class="our-clients__text">
+            80% of our customers recommend us to their<br>
+            friends and family.
+          </p>
+          <ul class="list-clients">
+            <li class="item list-clients__item">
+              <article>
+                <h3>Fedosova Maria<br>Konstantinovna</h3>
+                <img class="item__photo" src="./assets/images/photo4.jpg" alt="photo clients 1">
+                <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients1-info.png" alt="clients 1 info">
+              </article>
+            </li>
+            <li class="item list-clients__item">
+              <article>
+                <h3>Afanasyev Sergey<br>Alexandrovich</h3>
+                <img class="item__photo" src="./assets/images/photo5.jpg" alt="photo clients 1">
+                <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients2-info.png" alt="clients 2 info">
+              </article>
+            </li>
+            <li class="item list-clients__item">
+              <article>
+                <h3>Kiriev Egor<br>Leonidovich</h3>
+                <img class="item__photo" src="./assets/images/photo6.jpg" alt="photo clients 1">
+                <p>I want to thank the guys for their work. WE PUT YOUR SHOWER PART IN REPAIR. I am VERY grateful that I referred to the repair as to my own. GREAT THANKS I EXPRESS THE PROJECT TO GEORGIA FOR ITS PROFESSIONALISM AND APPROACH.
+                    THE REPAIR PROCESS WAS TURNED OUT IN TERMS, FASTER THAN ANTICIPATED. TEAM MOBILE AND PROFESSIONAL. WORKS PERFORMED QUALITATIVELY WITHOUT COMMENTS. QUALITY SATISFIED. PRICES DEMOCRATIC. I RECOMMEND THESE MASTERS.</p>
+                <img class="item__info" src="./assets/images/clients3-info.png" alt="clients 3 info">
+              </article>
+            </li>
+          </ul>
+      </section>
+
+      <section class="support">
+        <div class="support__top">
+            <form class="form support__form" action="">
+                <h3 class="form__title">have any questions?</h3>
+                <label  class="form__label">
+                  <input class="form__input" type="text" name="name" placeholder="What is your name:" pattern="^[A-Za-zа-яА-Я]{2, 20}" required>
+                </label>
+                <label  class="form__label">
+                  <input class="form__input" type="tel" name="tel" placeholder="Your phone number:" pattern="^\+375\d{9}\b" required>
+                </label>
+                <label  class="form__label">
+                  <input class="form__input" type="text" name="question" placeholder="I want to know:" required>
+                </label>
+                <input class="checkbox" type="checkbox" name="checkbox" id="support-checkbox" required>
+                <label class="checkbox__label" for="support-checkbox"></label>
+                <button class="button form__button" type="submit">Submit</button>
+              </form>
+        </div>
+        <p class="support__text">
+          Rostov-on-Don, Nansen St., 239 Shopping Center<br>Decorum Tel <a href="tel:+">+7 (928) 768 32 29</a>
+        </p>
+        <div class="support__contacts">
+         <a href="mailto:"><img src="./assets/images/icon_mail.png" alt="icon mail"></a>
+         <a href="http://"><img src="./assets/images/icon_instagram.png" alt="icon instagram"></a>
+        </div>
+        <div class="map">
+          <img src="./assets/images/map.jpg" alt="map">
+        </div>
       </section>
 
     </main>

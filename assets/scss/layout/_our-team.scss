@@ -26,8 +26,17 @@
     list-style: none;
     padding: 0;
 
-    &__item:not(:last-child) {
-      margin-right: 106px;
+    &__item {
+      position: relative;
+      &:not(:last-child) {
+        margin-right: 106px;
+      }
+    }
+
+    &__icon {
+      position: absolute;
+      top: -50px;
+      left: -50px;
     }
 
     &__info {
