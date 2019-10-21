@@ -3,6 +3,7 @@
   max-width: 1440px;
   margin: auto;
   background: #131313;
+  overflow: hidden;
 
     &__header {
       max-width: 1276px;
@@ -20,13 +21,13 @@
       max-width: 1256px;
       min-height: 133px;
       margin: auto;
+
+      @media screen and (max-width: 600px) {
+        display: none;
+      }
     }
 
     & main {
       background: $colorWhite;
     }
-
-  @media screen and (max-width: 800px) {
-    min-width: 300px;
-  }
 }

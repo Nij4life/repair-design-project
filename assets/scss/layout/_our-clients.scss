@@ -1,5 +1,9 @@
 .our-clients {
-  padding-bottom: 250px;
+  padding-bottom: 400px;
+
+  @media screen and (max-width: 1085px){
+    display: none;
+  }
 
   & .section-header {
     margin-top: 40px;
@@ -38,7 +42,11 @@
         font-size: 18px;
       }
 
-
+      &__text {
+        font-size: 15px;
+        line-height: 180%;
+        padding-bottom: 70px;;
+      }
 
       &__photo {
         position: absolute;

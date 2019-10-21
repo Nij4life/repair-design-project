@@ -3,6 +3,10 @@
   margin-top: -330px;
   padding-bottom: 500px;
 
+  @media screen and (max-width: 972px){
+    display: none;
+  }
+
   &__inner {
     display: flex;
     padding-top: 430px;
@@ -109,7 +113,7 @@
         text-decoration: none;
 
         &:hover {
-          color: rgb(255, 255, 255);
+          color: green;
         }
       }
 
