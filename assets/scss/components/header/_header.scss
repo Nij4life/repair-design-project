@@ -19,4 +19,15 @@
       color: #f0da7a;
     }
   }
+
+  @media screen and (max-width: 1380px) {
+    & .header__logo{
+      margin-left: 20px;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    font-size: 12px;
+    line-height: 14px;
+  }
 }

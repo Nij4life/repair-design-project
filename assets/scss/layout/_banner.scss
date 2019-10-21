@@ -36,6 +36,10 @@
       text-decoration: none;
       color: $colorGold;
     }
+
+    @media screen and (max-width: 800px){
+      display: none;
+    }
   }
 
   & .info {
@@ -54,6 +58,10 @@
 
       & .info__city {
         color: $colorGold;
+      }
+
+      @media screen and (max-width: 1000px){
+        font-size: 23px;
       }
     }
 
@@ -79,6 +87,15 @@
         color: $colorWhite;
         box-shadow: 0px 0px 4px 2px rgb(255, 255, 255, 0.9);
       }
+
+      @media screen and (max-width: 600px){
+        margin: 13px 0 !important;
+        width: 90%;
+      }
+    }
+
+    @media screen and (max-width: 1000px){
+      margin: 10% 0 20% 5%;
     }
   }
 
@@ -104,6 +121,10 @@
         border: 1px solid $colorGold;
         border-radius: 50%;
       }
+    }
+
+    @media screen and (max-width: 600px){
+      display: none;
     }
   }
 }

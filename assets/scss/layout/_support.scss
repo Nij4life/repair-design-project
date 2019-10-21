@@ -1,12 +1,37 @@
 .support {
+  position: relative;
   background: linear-gradient(180deg, rgba(24, 24, 24, 0.9) 3.47%, rgba(24, 24, 24, 0.72) 100%);
   padding-bottom: 40px;
+
+  @media screen and (max-width: 1085px){
+    margin-top: -30px;
+    background: #131313;
+    padding-top: 300px;;
+  }
+
+  @media screen and (max-width: 972px){
+    padding-top: 0;
+  }
+
+  &__top {
+    position: relative;
+    top: -250px;
+    margin-bottom: -200px;
+
+    @media screen and (max-width: 1085px){
+     top: -100px;
+    }
+  }
 
   & form {
     padding: 0 140px;
     max-width: 620px;
     margin: auto;
     background: #131313;
+
+    @media screen and (max-width: 600px){
+      padding: 0 20px;
+    }
 
     & .form__title {
       margin: 30px auto;
@@ -25,6 +50,11 @@
       margin: 40px 49px;
       background: #131313;
       color: #ffffff;
+
+      @media screen and (max-width: 920px){
+        width: 100%;
+        margin: 40px 0;
+      }
 
       &::placeholder {
         color: #ffffff;
@@ -50,6 +80,11 @@
 
       .form__input {
         width: 516px;
+
+        @media screen and (max-width: 920px){
+          width: 100%;
+          margin: 40px 0;
+        }
       }
     }
 
@@ -77,12 +112,21 @@
       margin: 20px 0 40px 50px;
       color: #ffffff;
 
+      @media screen and (max-width: 920px){
+        left: 0;
+        margin: 0 0 40px 0;
+      }
     }
 
     & .form__button {
       padding: 20px 70px;
       box-shadow: 0px 5px 15px rgba(227, 184, 115, 0.15);
       margin: 10px 0 34px 35%;
+
+      @media screen and (max-width: 920px){
+        width: 100%;
+        margin: 0;
+      }
     }
   }
 
@@ -97,6 +141,19 @@
     text-transform: uppercase;
     color: $colorGold;
 
+    @media screen and (max-width: 1085px){
+      margin: 100px 40px 40px 40px;
+      font-size: 18px;
+    }
+
+    @media screen and (max-width: 920px){
+      margin-top: 140px;
+    }
+
+    @media screen and (max-width: 376px){
+      padding-top: 200px;
+    }
+
     & a {
       color: $colorGold;
       text-decoration: none;
@@ -109,6 +166,10 @@
 
   &__contacts {
     text-align: center;
+
+    @media screen and (max-width: 1085px){
+      margin-bottom: 40px;
+    }
 
     & img {
       margin-right: 20px;
@@ -123,6 +184,20 @@
   & .map {
     margin: 40px auto;
     text-align: center;
+
+    @media screen and (max-width: 1085px){
+      width: 90%;
+      margin: auto;
+      & img {
+        width: 100%;
+      }
+    }
+
+    @media screen and (max-width: 376px){
+      position: absolute;
+      bottom: 290px;
+      left: 5%;
+    }
 
     & img {
       display: inline-block;

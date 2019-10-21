@@ -25,7 +25,24 @@
           margin: 0 30px;
           border-top: 1px solid $colorGold;
           border-bottom: 1px solid $colorGold;
+          }
+
+
+        @media screen and (max-width: 1000px){
+          text-align: center;
+
+          &::after {
+            display: none;
+          }
+          & br {
+            display: none;
+          }
         }
+      }
+
+      @media screen and (max-width: 1000px){
+        flex-basis: content;
+        margin: 18px;
       }
     }
 
@@ -37,7 +54,11 @@
       line-height: 20px;
 
       &__item:nth-child(2n-1) {
-      flex-basis: 200px;
+        flex-basis: 200px;
+
+        @media screen and (max-width: 500px){
+          flex-basis: 150px;
+        }
       }
 
       &__h3 {
@@ -45,6 +66,23 @@
         color: $colorGold;
         text-transform: uppercase;
       }
+    }
+
+    & .mobille-slider {
+      display: none;
+      width: 100%;
+
+      & img {
+        width: 100%;
+      }
+
+      @media screen and (max-width: 1000px){
+        display: block;
+      }
+    }
+
+    @media screen and (max-width: 1000px){
+      margin: 40px auto;
     }
   }
 
@@ -117,6 +155,10 @@
           position: relative;
           left: -130px;
         }
+    }
+
+    @media screen and (max-width: 1000px){
+      display: none;
     }
   }
 
